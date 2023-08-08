@@ -12,7 +12,7 @@ import java.util.List;
 @RegisterRestClient
 public interface BinanceRestClient {
     @GET
-    @Path("/api/v1/klines")
+    @Path("/api/v3/klines")
     List<Candlestick> getCandlestickBars(
             @QueryParam("symbol") String symbol,
             @QueryParam("interval") String interval,
